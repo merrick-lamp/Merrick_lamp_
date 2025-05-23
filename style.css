@@ -6,9 +6,9 @@
   width: 100%;
 }
 body {
-  margin: 40px;           
+  margin: 80px;           
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: #1b181f;
   background-color: #1b181f; /* para que no quede blanco si el fondo no cubre todo */
 }
 
