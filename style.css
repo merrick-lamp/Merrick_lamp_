@@ -5,15 +5,11 @@
   justify-content: center;
   width: 100%;
 }
-
-.imagen-ejemplo {
-  width: 100%;               /* o 600px si quieres tamaño fijo */
-  max-width: 600px;
-  height: auto;
-  margin: 40px auto;         /* margen arriba/abajo y centrado horizontal */
-  display: block;            /* permite que margin: auto funcione */
-  border-radius: 8px;        /* esquinas redondeadas opcionales */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra opcional */
+body {
+  margin: 40px;           
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #1b181f; /* para que no quede blanco si el fondo no cubre todo */
 }
 
 .twitter-header .div {
