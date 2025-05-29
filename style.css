@@ -630,12 +630,13 @@ body {
 }
 
 .twitter-header .overlap-6 {
-  position: absolute;
-  width: 408px;
-  height: 642px;
-  top: 0;
-  left: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: visible;
 }
+
 
 .twitter-header .group-6 {
   position: absolute;
@@ -648,12 +649,13 @@ body {
 }
 
 .twitter-header .image-8 {
-  position: absolute;
-  width: 205px;
-  height: 640px;
-  top: 2px;
-  left: 0;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
 }
+
 
 .twitter-header .tecnolog-a-empleada {
   position: absolute;
