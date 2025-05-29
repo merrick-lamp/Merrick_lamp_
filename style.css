@@ -649,13 +649,11 @@ body {
 }
 
 .twitter-header .image-8 {
-  position: relative;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  display: block;
-  margin-left: auto; /* Esto alinea a la derecha */
-  margin-right: 0;
+  position: absolute;
+  width: 205px;
+  height: 640px;
+  top: 2px;
+  left: 0;
 }
 
 
