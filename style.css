@@ -630,13 +630,12 @@ body {
 }
 
 .twitter-header .overlap-6 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: visible;
+  position: absolute;
+  width: 408px;
+  height: 642px;
+  top: 0;
+  left: 0;
 }
-
-
 
 .twitter-header .group-6 {
   position: absolute;
@@ -655,7 +654,6 @@ body {
   top: 2px;
   left: 0;
 }
-
 
 .twitter-header .tecnolog-a-empleada {
   position: absolute;
