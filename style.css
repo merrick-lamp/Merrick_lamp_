@@ -632,10 +632,10 @@ body {
 .twitter-header .overlap-6 {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
+  height: auto;
   overflow: visible;
 }
+
 
 
 .twitter-header .group-6 {
