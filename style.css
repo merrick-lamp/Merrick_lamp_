@@ -650,10 +650,12 @@ body {
 
 .twitter-header .image-8 {
   position: relative;
-  max-width: 100%;
   height: auto;
+  max-height: 100%;
+  max-width: 100%;
   display: block;
-  margin-bottom: 1rem;
+  margin-left: auto; /* Esto alinea a la derecha */
+  margin-right: 0;
 }
 
 
