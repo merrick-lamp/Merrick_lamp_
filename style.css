@@ -752,7 +752,7 @@ a {
 }
 
 .juxtapose-container {
-  width: 600;
+  width: 600px;
   max-width: 1200px;
   margin: 2rem auto;
   overflow: visible;
