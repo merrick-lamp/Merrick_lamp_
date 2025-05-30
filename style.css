@@ -1,772 +1,712 @@
-.twitter-header {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-}
+/* --- Estilos base y de layout general --- */
 body {
-  margin: 180px;           
-  font-family: "Roboto", sans-serif;
-  color: #1b181f;
-  background-color: #1b181f; /* para que no quede blanco si el fondo no cubre todo */
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #1b181f; /* Color de texto predeterminado si es necesario */
+    background-color: #1b181f; /* Fondo oscuro principal de la página */
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex; /* Para centrar el twitter-header si es necesario */
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido desde arriba */
+}
+
+.twitter-header {
+    /* El ancho máximo de tu diseño */
+    max-width: 1500px;
+    width: 100%;
+    /* No es necesario position: relative; aquí si el div ya es el contenedor flex */
+    min-height: 100vh; /* Para que ocupe al menos toda la altura de la ventana */
+    background-color: transparent; /* El color de fondo lo dará el body */
+    box-sizing: border-box;
 }
 
 .twitter-header .div {
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 1500px;
-  height: 4014px;
-  position: relative;
-}
-
-.twitter-header .overlap {
-  position: absolute;
-  width: 1528px;
-  height: 3232px;
-  top: 782px;
-  left: 0;
-}
-
-.twitter-header .rectangle {
-  position: absolute;
-  width: 1500px;
-  height: 3053px;
-  top: 0;
-  left: 0;
-  background-color: #1b181f;
-}
-
-.twitter-header .group {
-  position: absolute;
-  width: 1504px;
-  height: 180px;
-  top: 3052px;
-  left: 0;
-}
-
-.twitter-header .overlap-group {
-  position: relative;
-  width: 1500px;
-  height: 180px;
-  background-color: #312833;
-}
-
-.twitter-header .text-wrapper {
-  position: absolute;
-  width: 414px;
-  top: 31px;
-  left: 32px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .p {
-  position: absolute;
-  width: 1429px;
-  top: 89px;
-  left: 32px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .group-2 {
-  position: absolute;
-  width: 1528px;
-  height: 740px;
-  top: 2306px;
-  left: 0;
-}
-
-.twitter-header .overlap-2 {
-  position: absolute;
-  width: 1500px;
-  height: 510px;
-  top: 230px;
-  left: 0;
-}
-
-.twitter-header .overlap-3 {
-  position: absolute;
-  width: 1500px;
-  height: 510px;
-  top: 0;
-  left: 0;
-}
-
-.twitter-header .vector {
-  position: absolute;
-  width: 1500px;
-  height: 1px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.twitter-header .img {
-  position: absolute;
-  width: 1px;
-  height: 510px;
-  top: 0;
-  left: 712px;
-}
-
-.twitter-header .vector-2 {
-  position: absolute;
-  width: 2px;
-  height: 506px;
-  top: 0;
-  left: 1118px;
-}
-
-.twitter-header .vector-3 {
-  position: absolute;
-  width: 778px;
-  height: 1px;
-  top: 239px;
-  left: 718px;
-  object-fit: cover;
-}
-
-.twitter-header .text-wrapper-2 {
-  position: absolute;
-  width: 309px;
-  top: 370px;
-  left: 83px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-3 {
-  position: absolute;
-  width: 309px;
-  top: 46px;
-  left: 734px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-4 {
-  position: absolute;
-  width: 378px;
-  top: 420px;
-  left: 81px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-5 {
-  position: absolute;
-  width: 378px;
-  top: 104px;
-  left: 733px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-6 {
-  position: absolute;
-  width: 309px;
-  top: 98px;
-  left: 1140px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-7 {
-  position: absolute;
-  width: 275px;
-  top: 306px;
-  left: 734px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-8 {
-  position: absolute;
-  width: 275px;
-  top: 310px;
-  left: 1140px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-9 {
-  position: absolute;
-  width: 275px;
-  top: 46px;
-  left: 1140px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-10 {
-  position: absolute;
-  width: 342px;
-  top: 358px;
-  left: 734px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-11 {
-  position: absolute;
-  width: 309px;
-  top: 352px;
-  left: 1140px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .vector-4 {
-  position: absolute;
-  width: 712px;
-  height: 1px;
-  top: 317px;
-  left: 0;
-  object-fit: cover;
-}
-
-.twitter-header .image {
-  position: absolute;
-  width: 592px;
-  height: 231px;
-  top: 44px;
-  left: 59px;
-}
-
-.twitter-header .vector-5 {
-  position: absolute;
-  width: 1492px;
-  height: 1px;
-  top: 40px;
-  left: 8px;
-  object-fit: cover;
-}
-
-.twitter-header .text-wrapper-12 {
-  position: absolute;
-  width: 819px;
-  top: 90px;
-  left: 40px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-13 {
-  position: absolute;
-  width: 376px;
-  top: 0;
-  left: 1118px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .group-3 {
-  position: absolute;
-  width: 1519px;
-  height: 786px;
-  top: 1481px;
-  left: 0;
-}
-
-.twitter-header .overlap-4 {
-  position: absolute;
-  width: 742px;
-  height: 606px;
-  top: 180px;
-  left: 0;
-}
-
-.twitter-header .image-2 {
-  position: absolute;
-  width: 369px;
-  height: 211px;
-  top: 205px;
-  left: 0;
-  object-fit: cover;
-}
-
-.twitter-header .image-3 {
-  position: absolute;
-  width: 369px;
-  height: 211px;
-  top: 395px;
-  left: 0;
-  object-fit: cover;
-}
-
-.twitter-header .image-4 {
-  position: absolute;
-  width: 375px;
-  height: 606px;
-  top: 0;
-  left: 367px;
-  background-blend-mode: luminosity;
-  object-fit: cover;
-}
-
-.twitter-header .rectangle-2 {
-  position: absolute;
-  width: 299px;
-  height: 310px;
-  top: 218px;
-  left: 409px;
-  background-color: #1b181fcc;
-  border: 1px solid;
-  border-color: transparent;
-}
-
-.twitter-header .rectangle-3 {
-  position: absolute;
-  width: 299px;
-  height: 362px;
-  top: 218px;
-  left: 31px;
-  background-color: #1b181fcc;
-  border: 1px solid;
-  border-color: transparent;
-}
-
-.twitter-header .cr-tica-a-la-cultura {
-  position: absolute;
-  width: 281px;
-  top: 229px;
-  left: 40px;
-  font-family: "Roboto-ExtraBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .span {
-  font-weight: 800;
-}
-
-.twitter-header .text-wrapper-14 {
-  font-family: "Roboto-Regular", Helvetica;
-}
-
-.twitter-header .derechos-de-autor-vs {
-  position: absolute;
-  width: 263px;
-  top: 239px;
-  left: 430px;
-  font-family: "Roboto-ExtraBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .image-5 {
-  position: absolute;
-  width: 367px;
-  height: 210px;
-  top: 1px;
-  left: 0;
-  object-fit: cover;
-}
-
-.twitter-header .div-wrapper {
-  position: absolute;
-  width: 1500px;
-  height: 180px;
-  top: 0;
-  left: 0;
-  background-color: #1b181f;
-}
-
-.twitter-header .text-wrapper-15 {
-  position: absolute;
-  width: 1389px;
-  top: 51px;
-  left: 39px;
-  -webkit-text-stroke: 1px #000000;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .overlap-5 {
-  position: absolute;
-  width: 758px;
-  height: 606px;
-  top: 180px;
-  left: 742px;
-}
-
-.twitter-header .image-6 {
-  position: absolute;
-  width: 368px;
-  height: 606px;
-  top: 0;
-  left: 390px;
-  background-blend-mode: luminosity;
-}
-
-.twitter-header .rectangle-4 {
-  position: absolute;
-  width: 299px;
-  height: 266px;
-  top: 218px;
-  left: 429px;
-  background-color: #1b181fcc;
-  border: 1px solid;
-  border-color: transparent;
-}
-
-.twitter-header .vulnerabilidad-de {
-  position: absolute;
-  width: 270px;
-  top: 239px;
-  left: 449px;
-  font-family: "Roboto-ExtraBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .image-7 {
-  position: absolute;
-  width: 398px;
-  height: 606px;
-  top: 0;
-  left: 0;
-}
-
-.twitter-header .rectangle-5 {
-  position: absolute;
-  width: 299px;
-  height: 338px;
-  top: 218px;
-  left: 47px;
-  background-color: #1b181fcc;
-  border: 1px solid;
-  border-color: transparent;
-}
-
-.twitter-header .est-tica-de-la {
-  position: absolute;
-  width: 263px;
-  top: 229px;
-  left: 70px;
-  font-family: "Inter-ExtraBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-16 {
-  font-family: "Inter-Regular", Helvetica;
-}
-
-.twitter-header .group-4 {
-  position: absolute;
-  width: 1507px;
-  height: 701px;
-  top: 780px;
-  left: 0;
-}
-
-.twitter-header .text-wrapper-17 {
-  position: absolute;
-  width: 729px;
-  top: 104px;
-  left: 539px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-18 {
-  position: absolute;
-  width: 247px;
-  top: 25px;
-  left: 1253px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .mask-group {
-  position: absolute;
-  width: 493px;
-  height: 701px;
-  top: 0;
-  left: 0;
-}
-
-.twitter-header .daan-van-den-berg-es {
-  position: absolute;
-  width: 658px;
-  top: 286px;
-  left: 539px;
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-19 {
-  font-family: "Roboto-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-}
-
-.twitter-header .text-wrapper-20 {
-  font-family: "Roboto-ExtraBold", Helvetica;
-  font-weight: 800;
-}
-
-.twitter-header .vector-6 {
-  position: absolute;
-  width: 1007px;
-  height: 1px;
-  top: 234px;
-  left: 493px;
-  object-fit: cover;
-}
-
-.twitter-header .group-5 {
-  position: absolute;
-  width: 1227px;
-  height: 642px;
-  top: 50px;
-  left: 89px;
-}
-
-.twitter-header .the-merrick-lamp-es {
-  position: absolute;
-  width: 780px;
-  top: 76px;
-  left: 443px;
-  font-family: "Roboto-SemiBold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-21 {
-  font-weight: 600;
-}
-
-.twitter-header .overlap-6 {
-  position: absolute;
-  width: 408px;
-  height: 642px;
-  top: 0;
-  left: 0;
-}
-
-.twitter-header .group-6 {
-  position: absolute;
-  width: 211px;
-  height: 632px;
-  top: 0;
-  left: 197px;
-  background-image: url(./img/image.png);
-  background-size: 100% 100%;
-}
-
-.twitter-header .image-8 {
-  position: absolute;
-  width: 205px;
-  height: 640px;
-  top: 2px;
-  left: 0;
-}
-
-.twitter-header .tecnolog-a-empleada {
-  position: absolute;
-  width: 765px;
-  top: 422px;
-  left: 443px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.twitter-header .text-wrapper-22 {
-  font-weight: 700;
+    width: 100%;
+    /* ¡CAMBIO CRUCIAL! Flexbox para apilar secciones */
+    display: flex;
+    flex-direction: column; /* Apila los elementos hijos verticalmente */
+    align-items: center; /* Centra las secciones horizontalmente */
+    /* REMOVIDO: position: relative; y height: auto; ya no son necesarios aquí de esta manera */
+    background-color: transparent; /* O el color que desees para el "fondo" interno del dossier */
+    /* Agrega un padding superior e inferior si quieres espacio del borde del dossier */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+/* --- Sección inicial (THE MERRICK LAMP - TÍTULO GRANDE) --- */
+/* Ya no necesitamos position: absolute en .overlap-top-section para que fluya */
+.overlap-top-section {
+    width: 100%; /* O el ancho máximo que quieras para esta sección */
+    height: 808px; /* Mantener la altura fija para la imagen de fondo */
+    /* REMOVIDO: top y left */
+    background-color: #1b181f; /* Asegura el fondo oscuro */
+    position: relative; /* Necesario para que .overlap-wrapper y .image-wrapper se posicionen dentro */
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
 }
 
 .twitter-header .overlap-wrapper {
-  position: absolute;
-  width: 2056px;
-  height: 808px;
-  top: -26px;
-  left: 0;
+    position: absolute; /* Mantenemos absolute para centrar dentro de overlap-top-section */
+    width: 100%;
+    height: 808px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .twitter-header .overlap-7 {
-  position: relative;
-  width: 2054px;
-  height: 808px;
+    position: relative; /* Relativo al wrapper */
+    width: 1500px; /* O el ancho de tu diseño principal, más grande que 1227px para la imagen */
+    max-width: 100%; /* Asegura que no se desborde */
+    height: 808px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* Oculta partes de la imagen que se desborden */
 }
 
 .twitter-header .image-wrapper {
-  position: absolute;
-  width: 1988px;
-  height: 808px;
-  top: 0;
-  left: 66px;
+    position: absolute;
+    width: 100%; /* El wrapper de la imagen ocupa todo el ancho del overlap-7 */
+    height: 808px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen al lado derecho de su contenedor */
+    align-items: center;
 }
 
 .twitter-header .image-9 {
-  position: absolute;
-  width: 1434px;
-  height: 782px;
-  top: 26px;
-  left: 0;
+    width: 1434px; /* Ancho de la imagen de fondo */
+    height: 782px;
+    object-fit: cover;
+    margin-right: 0;
+    /* Ajusta este transform para la posición visual si es necesario */
+    transform: translateX(100px); /* Puede necesitar ajustes */
 }
 
 .twitter-header .rectangle-6 {
-  position: absolute;
-  width: 690px;
-  height: 782px;
-  top: 26px;
-  left: 0;
-  background: linear-gradient(
-    269deg,
-    rgba(22, 18, 22, 1) 0%,
-    rgba(27, 24, 31, 1) 100%
-  );
+    position: absolute;
+    width: 690px;
+    height: 782px;
+    top: 26px; /* Relativo a .overlap-7 */
+    left: 0;
+    background: linear-gradient(
+        269deg,
+        rgba(22, 18, 22, 1) 0%,
+        rgba(27, 24, 31, 1) 100%
+    );
+    z-index: 1;
 }
 
 .twitter-header .THE-MERRICK-LAMP {
-  position: absolute;
-  width: 567px;
-  top: 370px;
-  left: 42px;
-  font-family: "Roboto-Bold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 50px;
-  letter-spacing: 0;
-  line-height: normal;
+    position: absolute;
+    width: 567px;
+    top: 370px; /* Relativo a .overlap-7 */
+    left: 42px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+    z-index: 2;
+}
+
+.twitter-header .text-wrapper-22 {
+    font-weight: 700;
 }
 
 .twitter-header .text-wrapper-23 {
-  font-family: "Roboto-Regular", Helvetica;
-  font-size: 32px;
-}
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
-  height: 100%;
-}
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-  text-decoration: none;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 32px;
 }
 
-.juxtapose-container {
-  width: 110px;
-  max-width: 50px;
-  margin-left: 0;
-  overflow: visible;
-  position: relative;
-  z-index: 10;
+/* --- SECCIÓN "THE MERRICK LAMP" CON JUXTAPOSE Y PÁRRAFO --- */
+.merrick-lamp-section {
+    width: 1227px; /* Ancho del contenido principal */
+    max-width: 90%; /* Responsivo */
+    /* REMOVIDO: position: absolute y top */
+    display: flex; /* Contenedor flex para Juxtapose y párrafo */
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos al inicio (arriba) */
+    gap: 40px; /* Espacio entre el Juxtapose y el texto */
+    padding: 20px 0;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    background-color: transparent; /* Fondo transparente si el .twitter-header .div ya tiene fondo */
 }
 
-.juxtapose {
-  display: block;
-  width: 700px;
-  height: 1400px;
-  border: none;
+.juxtapose-column-merrick {
+    flex: 1; /* Permite que esta columna crezca/encoga */
+    min-width: 450px; /* Ancho mínimo para el Juxtapose */
+    max-width: 600px; /* Ancho máximo */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y el iframe */
+}
+
+.juxtapose-title-merrick {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.juxtapose-merrick {
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    max-width: 100%;
+    height: 450px;
+    display: block;
+}
+
+.merrick-description-column {
+    flex: 1; /* El texto ocupa el espacio restante */
+    min-width: 400px;
+    max-width: 780px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centra el párrafo verticalmente dentro de su columna */
+}
+
+.the-merrick-lamp-description {
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: left;
+    margin: 0;
+}
+
+.text-wrapper-21 {
+    font-weight: 600;
+}
+
+.text-wrapper-14 {
+    font-family: "Roboto-Regular", Helvetica;
+}
+
+/* --- SECCIÓN DEL DIAGRAMA (AHORA SOLO EL DIAGRAMA) --- */
+.tecnologia-diagrama-section {
+    width: 1227px; /* Mismo ancho que la sección anterior para alineación */
+    max-width: 90%; /* Responsivo */
+    /* REMOVIDO: position: absolute y top */
+    display: flex;
+    flex-direction: column; /* Apila el título y el diagrama */
+    align-items: center; /* Centra horizontalmente */
+    gap: 40px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    background-color: transparent;
+}
+
+.diagrama-column-full {
+    flex: 1;
+    min-width: 450px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y el diagrama */
+}
+
+.diagrama-title {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- ESTILOS DEL DIAGRAMA --- */
+.diagram-container {
+    display: flex;
+    flex-direction: row; /* Los pasos del diagrama en fila */
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.step {
+    border: 2px solid white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: #333;
+    color: white;
+    flex: 1 1 180px; /* Permite que los pasos crezcan pero tengan un tamaño base */
+    min-width: 150px;
+    max-width: 250px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.step h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.step p {
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: white;
+}
+
+.arrow {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0; /* Evita que la flecha se encoja */
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- SECCIÓN "DAAN VAN DEN BERG" (AUTOR) --- */
+.group-4 {
+    width: 1227px; /* Ancho de tu contenido principal */
+    max-width: 90%; /* Responsivo */
+    height: 701px; /* Mantener la altura fija para la imagen del autor */
+    /* REMOVIDO: position: absolute y top */
+    background-color: #1b181f; /* Asegura el fondo oscuro */
+    position: relative; /* Necesario para la imagen y textos internos absolutos */
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    padding-top: 50px; /* Padding interno */
+    box-sizing: border-box;
+    display: flex; /* Para controlar la alineación de la imagen y el texto principal */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Los elementos internos de group-4 aún usan absolute para replicar el diseño */
+.group-4 .text-wrapper-17 {
+    position: absolute;
+    width: 729px;
+    top: 104px;
+    left: 539px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.group-4 .text-wrapper-18 {
+    position: absolute;
+    width: 247px;
+    top: 25px;
+    left: 1100px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.group-4 .mask-group {
+    position: absolute;
+    width: 493px;
+    height: 701px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.group-4 .daan-van-den-berg-es {
+    position: absolute;
+    width: 658px;
+    top: 286px;
+    left: 539px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.group-4 .text-wrapper-19 {
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.group-4 .text-wrapper-20 {
+    font-family: "Roboto-ExtraBold", Helvetica;
+    font-weight: 800;
+}
+
+.group-4 .vector-6 {
+    position: absolute;
+    width: 1007px;
+    height: 1px;
+    top: 234px;
+    left: 493px;
+    object-fit: cover;
+}
+
+/* --- SECCIÓN "CONCEPTOS PRINCIPALES" --- */
+.group-3 {
+    width: 1227px; /* Mismo ancho para alineación */
+    max-width: 90%; /* Responsivo */
+    height: 786px; /* Altura fija importante */
+    /* REMOVIDO: position: absolute y top */
+    background-color: #1b181f;
+    position: relative; /* Necesario para los elementos internos absolutos */
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    padding-top: 50px; /* Padding interno */
+    box-sizing: border-box;
+}
+
+.group-3 .div-wrapper {
+    position: absolute;
+    width: 1227px;
+    height: 180px;
+    top: 0;
+    left: 0;
+    background-color: #1b181f;
+}
+
+.group-3 .text-wrapper-15 {
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    left: 0;
+    -webkit-text-stroke: 1px #000000;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+/* Estilos de las imágenes y rectángulos dentro de "CONCEPTOS PRINCIPALES" */
+/* Estos seguirán siendo absolutos dentro de .group-3 */
+.group-3 .overlap-4, .group-3 .overlap-5 {
+    position: absolute;
+    width: 600px;
+    height: 606px;
+    top: 180px;
+}
+
+.group-3 .overlap-4 { left: 0; }
+.group-3 .overlap-5 { left: 627px; } /* Ajusta este left para que las dos columnas queden lado a lado */
+
+/* --- SECCIÓN "CULTURA DIGITAL" --- */
+.group-2-cultura-digital {
+    width: 1227px;
+    max-width: 90%; /* Responsivo */
+    height: 740px; /* Altura fija importante */
+    /* REMOVIDO: position: absolute y top */
+    background-color: #1b181f;
+    position: relative; /* Necesario para los elementos internos absolutos */
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+    padding-top: 50px; /* Padding interno */
+    box-sizing: border-box;
+}
+
+.group-2-cultura-digital .text-wrapper-12 {
+    position: absolute;
+    width: 819px;
+    top: 90px;
+    left: 40px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.group-2-cultura-digital .text-wrapper-13 {
+    position: absolute;
+    width: 376px;
+    top: 0;
+    left: 1118px;
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Los elementos internos de .group-2-cultura-digital aún usan absolute */
+.group-2-cultura-digital .overlap-2 {
+    position: absolute;
+    width: 100%;
+    height: 510px;
+    top: 230px;
+    left: 0;
+}
+/* ... otros estilos para elementos dentro de .group-2-cultura-digital ... */
+
+
+/* --- SECCIÓN FINAL DE RELEVANCIA EN LA CULTURA DIGITAL --- */
+.group-relevancia-final {
+    width: 1227px;
+    max-width: 90%; /* Responsivo */
+    height: 180px; /* Altura fija importante */
+    /* REMOVIDO: position: absolute y top */
+    background-color: #312833;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px; /* Espacio debajo de esta sección */
+}
+
+.group-relevancia-final .text-wrapper {
+    font-family: "Roboto-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.group-relevancia-final .p {
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
 }
 
 
+/* --- Media queries para responsividad (AJUSTADAS) --- */
+@media (max-width: 1100px) {
+    /* Todas las secciones principales ahora usarán las propiedades flexbox/ancho directamente */
+    .merrick-lamp-section,
+    .tecnologia-diagrama-section,
+    .group-4,
+    .group-3,
+    .group-2-cultura-digital,
+    .group-relevancia-final {
+        flex-direction: column; /* Apila los elementos internos */
+        align-items: center; /* Centra horizontalmente */
+        width: 95%; /* Un poco más de ancho en pantallas más pequeñas */
+        max-width: 100%;
+        margin-bottom: 40px; /* Espacio entre secciones */
+    }
+
+    /* Para la sección Merrick Lamp con Juxtapose */
+    .juxtapose-column-merrick,
+    .merrick-description-column {
+        min-width: unset; /* Quita el mínimo ancho */
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .juxtapose-merrick {
+        width: 90%; /* Ajusta el ancho del Juxtapose en móviles */
+        max-width: 500px;
+    }
+
+    .the-merrick-lamp-description {
+        text-align: center; /* Centra el texto en móviles */
+    }
+
+    /* Para la sección del diagrama */
+    .diagrama-column-full {
+        min-width: unset;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajustar las posiciones absolutas internas de los grupos a estáticas o adaptativas en móvil */
+    .group-4 .text-wrapper-17,
+    .group-4 .text-wrapper-18,
+    .group-4 .mask-group,
+    .group-4 .daan-van-den-berg-es,
+    .group-4 .vector-6,
+    .group-3 .overlap-4,
+    .group-3 .overlap-5,
+    .group-3 .div-wrapper,
+    .group-2-cultura-digital .overlap-2 {
+        position: static; /* Esto hace que los elementos se posicionen en el flujo normal */
+        left: auto;
+        top: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    /* Algunos elementos internos de group-3 y group-2-cultura-digital */
+    .group-3 .overlap-4, .group-3 .overlap-5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .group-3 .image-2, .group-3 .image-3, .group-3 .image-4, .group-3 .image-5, .group-3 .image-6, .group-3 .image-7 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px; /* Espacio entre imágenes apiladas */
+    }
+    .group-3 .rectangle-2, .group-3 .rectangle-3, .group-3 .rectangle-4, .group-3 .rectangle-5 {
+        width: 90%;
+        position: relative; /* Mantener relative si el contenido está posicionado dentro */
+        left: auto;
+        top: auto;
+        margin: 10px auto; /* Centrar y dar espacio */
+    }
+    .group-3 .cr-tica-a-la-cultura, .group-3 .derechos-de-autor-vs,
+    .group-3 .vulnerabilidad-de, .group-3 .est-tica-de-la {
+        position: relative;
+        left: auto;
+        top: auto;
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Ajustes específicos para group-4 en móvil */
+    .group-4 {
+        height: auto; /* La altura del autor se adapta al contenido */
+        padding-top: 20px;
+    }
+    .group-4 .mask-group {
+        position: relative; /* Ahora fluye con el contenido */
+        width: 80%; /* Más pequeña en móvil */
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .group-4 .text-wrapper-17,
+    .group-4 .text-wrapper-18,
+    .group-4 .daan-van-den-berg-es,
+    .group-4 .vector-6 {
+        position: static; /* Todos fluyen */
+        width: 100%;
+        text-align: center;
+        left: auto;
+        top: auto;
+        margin: 10px 0;
+    }
+    .group-4 .text-wrapper-17 { font-size: 40px; }
 
 
+    /* Ajustes para Cultura Digital en móvil */
+    .group-2-cultura-digital {
+        height: auto; /* Se adapta a la altura del contenido */
+        padding-top: 20px;
+    }
+    .group-2-cultura-digital .text-wrapper-12 {
+        position: static;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .group-2-cultura-digital .text-wrapper-13 {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .group-2-cultura-digital .overlap-2 {
+        position: static; /* Este contenedor también debe fluir */
+        height: auto;
+        display: flex;
+        flex-direction: column; /* Apila los elementos internos */
+        align-items: center;
+        width: 100%;
+    }
+    /* Los elementos internos de overlap-2 también pueden necesitar static */
+    .group-2-cultura-digital .overlap-2 .vector,
+    .group-2-cultura-digital .overlap-2 .img,
+    .group-2-cultura-digital .overlap-2 .vector-2,
+    .group-2-cultura-digital .overlap-2 .vector-3,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-2,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-3,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-4,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-5,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-6,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-7,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-8,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-9,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-10,
+    .group-2-cultura-digital .overlap-2 .text-wrapper-11,
+    .group-2-cultura-digital .overlap-2 .vector-4,
+    .group-2-cultura-digital .overlap-2 .image {
+        position: static;
+        width: 90%;
+        text-align: center;
+        margin-bottom: 15px; /* Espacio entre cada elemento */
+    }
+}
+
+@media (max-width: 768px) {
+    .diagram-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    .step {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .twitter-header .THE-MERRICK-LAMP {
+        font-size: 32px; /* Texto de título aún más pequeño */
+        text-align: center;
+        left: 0;
+        width: 100%;
+        top: 200px; /* Ajusta este valor si es necesario */
+    }
+
+    .twitter-header .rectangle-6 {
+        width: 100%;
+        left: 0;
+    }
+
+    .twitter-header .image-9 {
+        transform: translateX(0);
+        width: 100%;
+        object-fit: cover;
+    }
+}
