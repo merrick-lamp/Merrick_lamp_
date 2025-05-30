@@ -5,25 +5,21 @@
   justify-content: center;
   width: 100%;
 }
-body {
-  margin: 180px;           
-  font-family: "Roboto", sans-serif;
-  color: #1b181f;
-  background-color: #1b181f; /* para que no quede blanco si el fondo no cubre todo */
-}
 
 .twitter-header .div {
   background-color: #ffffff;
   overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
   width: 1500px;
-  height: 4014px;
+  height: 4459px;
   position: relative;
 }
 
 .twitter-header .overlap {
   position: absolute;
   width: 1528px;
-  height: 3232px;
+  height: 3677px;
   top: 782px;
   left: 0;
 }
@@ -31,7 +27,7 @@ body {
 .twitter-header .rectangle {
   position: absolute;
   width: 1500px;
-  height: 3053px;
+  height: 3546px;
   top: 0;
   left: 0;
   background-color: #1b181f;
@@ -41,7 +37,7 @@ body {
   position: absolute;
   width: 1504px;
   height: 180px;
-  top: 3052px;
+  top: 3497px;
   left: 0;
 }
 
@@ -82,7 +78,7 @@ body {
   position: absolute;
   width: 1528px;
   height: 740px;
-  top: 2306px;
+  top: 2751px;
   left: 0;
 }
 
@@ -277,7 +273,7 @@ body {
 
 .twitter-header .image {
   position: absolute;
-  width: 592px;
+  width: 593px;
   height: 231px;
   top: 44px;
   left: 59px;
@@ -322,7 +318,7 @@ body {
   position: absolute;
   width: 1519px;
   height: 786px;
-  top: 1481px;
+  top: 1926px;
   left: 0;
 }
 
@@ -379,7 +375,7 @@ body {
   height: 362px;
   top: 218px;
   left: 31px;
-  background-color: #1b181fcc;
+  background-color: #1b181fe6;
   border: 1px solid;
   border-color: transparent;
 }
@@ -420,7 +416,7 @@ body {
 
 .twitter-header .image-5 {
   position: absolute;
-  width: 367px;
+  width: 368px;
   height: 210px;
   top: 1px;
   left: 0;
@@ -531,7 +527,7 @@ body {
   position: absolute;
   width: 1507px;
   height: 701px;
-  top: 780px;
+  top: 1225px;
   left: 0;
 }
 
@@ -606,7 +602,7 @@ body {
 
 .twitter-header .group-5 {
   position: absolute;
-  width: 1227px;
+  width: 1294px;
   height: 642px;
   top: 50px;
   left: 89px;
@@ -615,8 +611,8 @@ body {
 .twitter-header .the-merrick-lamp-es {
   position: absolute;
   width: 780px;
-  top: 76px;
-  left: 443px;
+  top: 235px;
+  left: 512px;
   font-family: "Roboto-SemiBold", Helvetica;
   font-weight: 400;
   color: #ffffff;
@@ -643,8 +639,6 @@ body {
   height: 632px;
   top: 0;
   left: 197px;
-  background-image: url(./img/image.png);
-  background-size: 100% 100%;
 }
 
 .twitter-header .image-8 {
@@ -655,14 +649,14 @@ body {
   left: 0;
 }
 
-.twitter-header .tecnolog-a-empleada {
+.twitter-header .archivo-STL-u-OBJ {
   position: absolute;
-  width: 765px;
-  top: 422px;
-  left: 443px;
+  width: 219px;
+  top: 886px;
+  left: 453px;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 400;
-  color: #ffffff;
+  color: #fffbfb;
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
@@ -672,41 +666,136 @@ body {
   font-weight: 700;
 }
 
+.twitter-header .impresi-n {
+  position: absolute;
+  width: 219px;
+  top: 886px;
+  left: 794px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 400;
+  color: #fffbfb;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twitter-header .rectangle-6 {
+  position: absolute;
+  width: 305px;
+  height: 260px;
+  top: 863px;
+  left: 1096px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.twitter-header .rectangle-7 {
+  position: absolute;
+  width: 305px;
+  height: 260px;
+  top: 861px;
+  left: 759px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.twitter-header .rectangle-8 {
+  position: absolute;
+  width: 305px;
+  height: 260px;
+  top: 861px;
+  left: 86px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.twitter-header .rectangle-9 {
+  position: absolute;
+  width: 305px;
+  height: 260px;
+  top: 863px;
+  left: 422px;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+
+.twitter-header .proceso-de-exhibici {
+  position: absolute;
+  width: 238px;
+  top: 886px;
+  left: 1141px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 400;
+  color: #fffbfb;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twitter-header .text-wrapper-23 {
+  position: absolute;
+  width: 765px;
+  top: 741px;
+  left: 89px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twitter-header .arrow {
+  top: 1077px;
+  left: 371px;
+  position: absolute;
+  width: 84px;
+  height: 22px;
+}
+
+.twitter-header .arrow-2 {
+  top: 1078px;
+  left: 709px;
+  position: absolute;
+  width: 84px;
+  height: 22px;
+}
+
+.twitter-header .arrow-3 {
+  top: 1076px;
+  left: 1044px;
+  position: absolute;
+  width: 84px;
+  height: 22px;
+}
+
 .twitter-header .overlap-wrapper {
   position: absolute;
-  width: 2056px;
-  height: 808px;
-  top: -26px;
+  width: 1502px;
+  height: 782px;
+  top: 0;
   left: 0;
 }
 
 .twitter-header .overlap-7 {
   position: relative;
-  width: 2054px;
-  height: 808px;
-}
-
-.twitter-header .image-wrapper {
-  position: absolute;
-  width: 1988px;
-  height: 808px;
-  top: 0;
-  left: 66px;
-}
-
-.twitter-header .image-9 {
-  position: absolute;
-  width: 1434px;
+  width: 1500px;
   height: 782px;
-  top: 26px;
-  left: 0;
 }
 
-.twitter-header .rectangle-6 {
+.twitter-header .group-7 {
+  position: absolute;
+  width: 813px;
+  height: 782px;
+  top: 0;
+  left: 687px;
+}
+
+.twitter-header .rectangle-10 {
   position: absolute;
   width: 690px;
   height: 782px;
-  top: 26px;
+  top: 0;
   left: 0;
   background: linear-gradient(
     269deg,
@@ -718,7 +807,7 @@ body {
 .twitter-header .THE-MERRICK-LAMP {
   position: absolute;
   width: 567px;
-  top: 370px;
+  top: 344px;
   left: 42px;
   font-family: "Roboto-Bold", Helvetica;
   font-weight: 400;
@@ -728,41 +817,8 @@ body {
   line-height: normal;
 }
 
-.twitter-header .text-wrapper-23 {
+.twitter-header .text-wrapper-24 {
   font-family: "Roboto-Regular", Helvetica;
   font-size: 32px;
 }
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0px;
-  height: 100%;
-}
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-a {
-  text-decoration: none;
-}
 
-.juxtapose-container {
-  width: 110px;
-  max-width: 50px;
-  margin-left: 0;
-  overflow: visible;
-  position: relative;
-  z-index: 10;
-}
-
-.juxtapose {
-  display: block;
-  width: 700px;
-  height: 1400px;
-  border: none;
-}
