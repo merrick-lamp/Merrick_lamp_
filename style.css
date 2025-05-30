@@ -752,8 +752,8 @@ a {
 }
 
 .juxtapose-container {
-  width: 1200px;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
   margin: 2rem auto;
   overflow: visible;
   position: relative;
@@ -762,9 +762,11 @@ a {
 
 .juxtapose {
   display: block;
-  width: 800px;
-  height: 450px;
+  width: 1434px;
+  height: 782px;
   border: none;
 }
+
+
 
 
