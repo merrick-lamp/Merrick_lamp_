@@ -1,3 +1,21 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
 .twitter-header {
   background-color: #ffffff;
   display: flex;
@@ -769,6 +787,19 @@
   height: 22px;
 }
 
+.twitter-header .software-de-modelado {
+  position: absolute;
+  width: 286px;
+  top: 888px;
+  left: 112px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 400;
+  color: #fffbfb;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
 .twitter-header .overlap-wrapper {
   position: absolute;
   width: 1502px;
@@ -822,3 +853,48 @@
   font-size: 32px;
 }
 
+
+.twitter-header .overlap-7 {
+  position: relative;
+  width: 1500px;
+  height: 782px;
+}
+
+.twitter-header .group-7 {
+  position: absolute;
+  width: 813px;
+  height: 782px;
+  top: 0;
+  left: 687px;
+}
+
+.twitter-header .rectangle-10 {
+  position: absolute;
+  width: 690px;
+  height: 782px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    269deg,
+    rgba(22, 18, 22, 1) 0%,
+    rgba(27, 24, 31, 1) 100%
+  );
+}
+
+.twitter-header .THE-MERRICK-LAMP {
+  position: absolute;
+  width: 567px;
+  top: 344px;
+  left: 42px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.twitter-header .text-wrapper-24 {
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 32px;
+}
