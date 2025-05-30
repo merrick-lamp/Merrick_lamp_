@@ -754,7 +754,7 @@ a {
 .juxtapose-container {
   width: 110px;
   max-width: 50px;
-  margin-left: 5px;
+  margin-left: 0;
   overflow: visible;
   position: relative;
   z-index: 10;
