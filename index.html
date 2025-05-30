@@ -3,212 +3,173 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #1b181f;
+        color: #ffffff;
+      }
 
+      .twitter-header {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .twitter-header .div {
+        background-color: #ffffff;
+        overflow: hidden;
+        max-width: 1500px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      p {
+        margin: 1rem 0;
+        line-height: 1.6;
+      }
+
+      h1, h2, h3 {
+        margin-top: 1.5rem;
+        color: #ffffff;
+      }
+
+      .diagram-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+        padding: 1rem;
+        background-color: #2a2630;
+        border-radius: 16px;
+      }
+
+      .step {
+        flex: 1 1 200px;
+        background-color: #ffffff10;
+        padding: 1rem;
+        border-radius: 12px;
+        color: #ffffff;
+      }
+
+      .step h3 {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .step p {
+        font-size: 16px;
+        color: #ddd;
+      }
+
+      .arrow {
+        font-size: 32px;
+        color: #ffffff;
+      }
+
+      .juxtapose-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 2rem auto;
+        overflow: visible;
+        position: relative;
+        z-index: 10;
+      }
+
+      .juxtapose {
+        display: block;
+        width: 100%;
+        height: 450px;
+        border: none;
+      }
+
+      @media (max-width: 1024px) {
+        .twitter-header .div {
+          padding: 1rem;
+        }
+
+        .diagram-container {
+          flex-direction: column;
+        }
+
+        .step {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="twitter-header">
       <div class="div">
-        <div class="overlap">
-          <div class="rectangle"></div>
-          <div class="group">
-            <div class="overlap-group">
-              <p class="text-wrapper">RELEVANCIA EN LA CULTURA DIGITAL</p>
-              <p class="p">
-                Este proyecto es una crítica al diseño industrial y una obra conceptual que cuestiona las reglas del
-                diseño moderno. Explora el potencial de la computación para generar narrativas críticas y provocadoras,
-                y advierte sobre el uso responsable de las herramientas digitales.
-              </p>
-            </div>
-          </div>
-          <div class="group-2">
-            <div class="overlap-2">
-              <div class="overlap-3">
-                <img class="vector" src="img/vector-4.svg" />
-                <img class="img" src="img/vector-6.svg" />
-                <img class="vector-2" src="img/vector-8.svg" />
-                <img class="vector-3" src="img/vector-9.svg" />
-              </div>
-              <div class="text-wrapper-2">NUMERICAL REPRESENTATION</div>
-              <div class="text-wrapper-3">MODULARITY</div>
-              <p class="text-wrapper-4">El modelo de la lámpara existe como datos numéricos (archivo .STL o .OBJ).</p>
-              <p class="text-wrapper-5">
-                El objeto está compuesto por mallas 3D que pueden alterarse independientemente
-              </p>
-              <p class="text-wrapper-6">
-                La impresión 3D ejecuta automáticamente la forma alterada sin intervención humana.
-              </p>
-              <div class="text-wrapper-7">VARIABILIDAD</div>
-              <div class="text-wrapper-8">TRANSCODIFICACIÓN</div>
-              <div class="text-wrapper-9">AUTOMATION</div>
-              <p class="text-wrapper-10">Se pueden generar infinitas versiones deformadas a partir del archivo base.</p>
-              <p class="text-wrapper-11">
-                Se transforma un objeto de IKEA en una crítica social mediante manipulación digital.
-              </p>
-              <img class="vector-4" src="img/vector-10.svg"/>
-              <img class="image" src="img/image-15.png"/>
-            </div>
-            <img class="vector-5" src="img/vector-5.svg"/>
-            <div class="text-wrapper-12">CULTURA DIGITAL</div>
-            <p class="text-wrapper-13">PRINCIPIOS DE LOS NUEVOS MEDIOS</p>
-          </div>
-          <div class="group-3">
-            <div class="overlap-4">
-              <img class="image-2" src="img/image-13.png"/>
-              <img class="image-3" src="img/image-14.png"/>
-              <img class="image-4" src="img/image-3.png"/>
-              <div class="rectangle-2"></div>
-              <div class="rectangle-3"></div>
-              <p class="cr-tica-a-la-cultura">
-                <span class="span">Crítica a la cultura digital del diseño y la producción: <br /><br /></span>
-                <span class="text-wrapper-14"
-                  >El proyecto cuestiona cómo los objetos cotidianos, al convertirse en archivos digitales, pierden su
-                  estabilidad y pueden ser manipulados fácilmente. <br /><br />Una vez digitalizados, estos diseños
-                  pueden ser modificados, clonados, corrompidos o incluso &#34;enfermos&#34;.</span
-                >
-              </p>
-              <p class="derechos-de-autor-vs">
-                <span class="span">Derechos de autor vs. cultura del remix: <br /><br /></span>
-                <span class="text-wrapper-14"
-                  >Van den Berg interviene un archivo que, aunque gratuito, pertenece a una empresa global. La obra
-                  plantea preguntas sobre la autoría en el mundo del diseño digital y el conflicto entre lo legal y lo
-                  legítimo en la era del acceso libre a información y diseño.</span
-                >
-              </p>
-              <img class="image-5" src="img/image-12.png"/>
-            </div>
-            <div class="div-wrapper"><div class="text-wrapper-15">CONCEPTOS PRINCIPALES</div></div>
-            <div class="overlap-5">
-              <img class="image-6" src="img/image-17.png"/>
-              <div class="rectangle-4"></div>
-              <p class="vulnerabilidad-de">
-                <span class="span">Vulnerabilidad de los objetos digitales: <br /></span>
-                <span class="text-wrapper-14"
-                  ><br />Así como los cuerpos pueden enfermarse, los archivos digitales pueden corromperse o ser
-                  hackeados. Van den Berg convierte esta idea en estética material.</span
-                >
-              </p>
-              <img class="image-7" src="img/image-15.png"/>
-              <div class="rectangle-5"></div>
-              <p class="est-tica-de-la">
-                <span class="span">Estética de la deformidad:<br /></span>
-                <span class="text-wrapper-16"
-                  ><br />Inspirarse en Joseph Merrick no solo es una referencia a la figura histórica, sino una manera
-                  de hablar de lo que la cultura digital considera “anómalo” o “fuera de norma”. La lámpara se vuelve
-                  una metáfora del cuerpo intervenido, fallido o desviado del estándar</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="group-4">
-            <div class="text-wrapper-17">DAAN VAN DEN BERG</div>
-            <div class="text-wrapper-18">AUTOR MERRICK LAMP</div>
-            <img class="mask-group" src="img/image-2.png" />
-            <p class="daan-van-den-berg-es">
-              <span class="text-wrapper-19">Daan van den Berg es un </span>
-              <span class="text-wrapper-20">diseñador</span>
-              <span class="text-wrapper-19">
-                holandés que trabaja en la intersección entre el diseño digital, la tecnología y la crítica cultural.
-                <br /><br />Su práctica se caracteriza por explorar las consecuencias éticas, estéticas y filosóficas
-                del diseño computacional. Van den Berg se interesa particularmente por cómo la
-              </span>
-              <span class="text-wrapper-20">digitalización de los objetos </span>
-              <span class="text-wrapper-19"
-                >afecta su autenticidad, forma y significado.<br /><br />Sus proyectos se sitúan entre el
-              </span>
-              <span class="text-wrapper-20">arte conceptual </span>
-              <span class="text-wrapper-19">y el </span>
-              <span class="text-wrapper-20">diseño especulativo</span>
-              <span class="text-wrapper-19"
-                >, con un fuerte enfoque en la manipulación de archivos digitales y su materialización mediante
-                tecnologías como la impresión 3D. <br /><br />Ha presentado su trabajo en museos y festivales
-                internacionales, incluyendo el
-              </span>
-              <span class="text-wrapper-20">MoMA </span>
-              <span class="text-wrapper-19">en Nueva York</span>
-            </p>
-            <img class="vector-6" src="img/vector-1.svg" />
-          </div>
-          <div class="group-5">
-            <p class="the-merrick-lamp-es">
-              <span class="text-wrapper-21"
-                >The Merrick Lamp es una intervención crítica y estética realizada sobre un objeto cotidiano: una
-                lámpara modelo LAMPAN de IKEA. <br /><br
-              /></span>
-              <span class="text-wrapper-14"
-                >El diseñador Daan van den Berg descargó el archivo 3D original (disponible públicamente como parte de
-                la tendencia open source en diseño) y lo alteró digitalmente para que su forma reflejara las
-                deformaciones físicas del cuerpo de Joseph Merrick, conocido como El Hombre Elefante.<br /><br />La
-                lámpara resultante conserva la estructura reconocible de la lámpara IKEA original, pero aparece
-                deformada, torcida, como si hubiera sido afectada por una enfermedad ósea. Es impresa en 3D y presentada
-                como un objeto físico que transmite una narrativa cargada de crítica.</span
-              >
-            </p>
+        <h1>RELEVANCIA EN LA CULTURA DIGITAL</h1>
+        <p>
+          Este proyecto es una crítica al diseño industrial y una obra conceptual que cuestiona las reglas del diseño moderno.
+          Explora el potencial de la computación para generar narrativas críticas y provocadoras,
+          y advierte sobre el uso responsable de las herramientas digitales.
+        </p>
 
-            <div class="overlap-6">
-  <!-- NUEVO COMPARADOR JUXTAPOSE -->
-  <div class="juxtapose-container">
-    <iframe frameborder="0" class="juxtapose" width="100%" height="778"
-      src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d48ff640-3cea-11f0-bb24-0936e1cb08fb">
-    </iframe>
-  </div>
-</div>
+        <h2>PRINCIPIOS DE LOS NUEVOS MEDIOS</h2>
+        <p><strong>Numerical Representation:</strong> El modelo de la lámpara existe como datos numéricos (archivo .STL o .OBJ).</p>
+        <p><strong>Modularity:</strong> El objeto está compuesto por mallas 3D que pueden alterarse independientemente.</p>
+        <p><strong>Automation:</strong> La impresión 3D ejecuta automáticamente la forma alterada sin intervención humana.</p>
+        <p><strong>Variabilidad:</strong> Se pueden generar infinitas versiones deformadas a partir del archivo base.</p>
+        <p><strong>Transcodificación:</strong> Se transforma un objeto de IKEA en una crítica social mediante manipulación digital.</p>
 
-
-            <p class="tecnolog-a-empleada">
-              <span class="text-wrapper-22">Tecnología empleada<br /></span>
-              <span class="text-wrapper-14"
-                ><br />Archivo STL u OBJ: formato común para modelos 3D imprimibles.<br />Software de modelado
-                3D: probablemente programas como Blender, Rhino o ZBrush.<br />Impresión 3D: tecnología FDM o de resina
-                para mayor detalle.<br />Procesos de exhibición: obra montada en la muestra Design and Violence del MoMA
-                como símbolo crítico del diseño computacional.</span
-              >
-            </p>
-          </div>
+        <div class="juxtapose-container">
+          <iframe frameborder="0" class="juxtapose" width="100%" height="450"
+            src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d48ff640-3cea-11f0-bb24-0936e1cb08fb">
+          </iframe>
         </div>
 
-        <p class="tecnolog-a-empleada">
-  <span class="text-wrapper-22">Tecnología empleada<br /></span>
-  <span class="text-wrapper-14">
-    <br />Archivo STL u OBJ: formato común para modelos 3D imprimibles.<br />
-    Software de modelado 3D: probablemente programas como Blender, Rhino o ZBrush.<br />
-    Impresión 3D: tecnología FDM o de resina para mayor detalle.<br />
-    Procesos de exhibición: obra montada en la muestra Design and Violence del MoMA como símbolo crítico del diseño computacional.
-  </span>
-</p>
+        <h2>CONCEPTOS PRINCIPALES</h2>
+        <p><strong>Crítica a la cultura digital del diseño y la producción:</strong> El proyecto cuestiona cómo los objetos cotidianos, al convertirse en archivos digitales, pierden su estabilidad y pueden ser manipulados fácilmente.</p>
+        <p><strong>Derechos de autor vs. cultura del remix:</strong> Van den Berg interviene un archivo gratuito de IKEA y plantea preguntas sobre la autoría y legitimidad en la era digital.</p>
+        <p><strong>Vulnerabilidad de los objetos digitales:</strong> Así como los cuerpos pueden enfermarse, los archivos digitales pueden corromperse o ser hackeados.</p>
+        <p><strong>Estética de la deformidad:</strong> La lámpara se convierte en metáfora del cuerpo intervenido, fuera de norma.</p>
 
-<div class="diagram-container">
-  <div class="step">
-    <h3>Software de Modelado 3D</h3>
-    <p>Creación del diseño digital complejo de la lámpara (probablemente Blender, Rhino o ZBrush).</p>
-  </div>
-  <div class="arrow">→</div>
-  <div class="step">
-    <h3>Archivo STL u OBJ</h3>
-    <p>Formato estándar para exportar el modelo 3D, preparando el diseño para la manufactura aditiva.</p>
-  </div>
-  <div class="arrow">→</div>
-  <div class="step">
-    <h3>Impresión 3D</h3>
-    <p>Materialización física del diseño digital mediante tecnologías como FDM o de resina para mayor detalle.</p>
-  </div>
-  <div class="arrow">→</div>
-  <div class="step">
-    <h3>Proceso de Exhibición</h3>
-    <p>Montaje en la muestra "Design and Violence" del MoMA, donde la obra se convierte en un símbolo crítico del diseño computacional, elevando su significado.</p>
-  </div>
-</div>  
-      
-        <div class="overlap-wrapper">
-          <div class="overlap-7">
-            <div class="image-wrapper"><img class="image-9" src="img/image-1.png"/></div>
-            <div class="rectangle-6"></div>
-            <p class="THE-MERRICK-LAMP">
-              <span class="text-wrapper-22">THE MERRICK LAMP<br /></span>
-              <span class="text-wrapper-23">Daan van den Berg</span>
-            </p>
-            
+        <h2>DAAN VAN DEN BERG</h2>
+        <p>Daan van den Berg es un diseñador holandés que trabaja en la intersección entre el diseño digital, la tecnología y la crítica cultural.</p>
+        <p>Explora las consecuencias éticas y estéticas del diseño computacional. Su trabajo se sitúa entre el arte conceptual y el diseño especulativo.</p>
+
+        <h2>THE MERRICK LAMP</h2>
+        <p>Intervención crítica sobre una lámpara LAMPAN de IKEA. El archivo 3D fue alterado para reflejar deformaciones inspiradas en Joseph Merrick, El Hombre Elefante.</p>
+        <p>Impresa en 3D, la lámpara mantiene la forma original pero aparece torcida y deformada, transmitiendo una narrativa crítica.</p>
+
+        <h2>Tecnología empleada</h2>
+        <div class="diagram-container">
+          <div class="step">
+            <h3>Software de Modelado 3D</h3>
+            <p>Creación del diseño digital complejo de la lámpara (probablemente Blender, Rhino o ZBrush).</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="step">
+            <h3>Archivo STL u OBJ</h3>
+            <p>Formato estándar para exportar el modelo 3D, preparando el diseño para la manufactura aditiva.</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="step">
+            <h3>Impresión 3D</h3>
+            <p>Materialización física del diseño digital mediante tecnologías como FDM o de resina para mayor detalle.</p>
+          </div>
+          <div class="arrow">→</div>
+          <div class="step">
+            <h3>Proceso de Exhibición</h3>
+            <p>Montaje en la muestra "Design and Violence" del MoMA, donde la obra se convierte en un símbolo crítico del diseño computacional.</p>
           </div>
         </div>
       </div>
