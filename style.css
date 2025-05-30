@@ -766,3 +766,41 @@ a {
   height: 450px;
   border: none;
 }
+
+.diagram-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #2a2630;
+  border-radius: 16px;
+}
+
+.step {
+  flex: 1 1 200px;
+  background-color: #ffffff10;
+  padding: 1rem;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.step h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.step p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.arrow {
+  font-size: 32px;
+  color: #ffffff;
+}
+
